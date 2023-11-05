@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './SignIn.css'
 const SignIn = () => {
   const navigator = useNavigate();
@@ -29,6 +31,42 @@ const SignIn = () => {
         navigator('/');
       });
   };
+//   const login = async (e) => {
+//     e.preventDefault();
+//     const { username, password } = user;
+//     // const res = await fetch("http://localhost:6969/Login", {
+//     //     method: "POST",
+//     //     headers: {
+//     //         "Content-Type": "application/json"
+//     //     },
+//     //     body: JSON.stringify({
+//     //         username, password
+//     //     })
+//     // });
+//     const res = axios.get('http://localhost:6969/Login', user);
+//     const data = await res.json();
+
+//     if(res.status === 400 || data===null){
+//         console.log("Invalid Deatails");
+//         toast.warn("User Not Exist!", {
+//             position: "top-center"
+//         });
+//     }
+//     else if(res.status === 400 || !data){
+//         console.log("Invalid Deatails");
+//         toast.warn("Invalid Details!", {
+//             position: "top-center"
+//         });
+//     }
+//     else {
+//         console.log("Valid Data");
+//         // setAccount(data);
+//         toast.success("User Logged In", {
+//             position: "top-center"
+//         });
+//         setUser({ ...user, username: "", password: "" });
+//     }
+// }
 
   return (
     <>

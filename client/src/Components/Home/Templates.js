@@ -1,11 +1,5 @@
 import React from "react";
 import "./Template.css";
-// import t1 from "../image/t1.jpg";
-import t2 from "../image/t2.jpg";
-import t3 from "../image/t3.jpg";
-import t4 from "../image/t4.jpg";
-import t5 from "../image/t5.jpg";
-import t6 from "../image/t6.jpg";
 export default function Templates() {
   return (
     <>
@@ -15,42 +9,61 @@ export default function Templates() {
         </h1>
       </div>
       <div id="Templates-container">
+         <a href="https://diogotc.com/">
          <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={require(`../image/t1.jpg`)} alt="" />
+          <img src={require(`../image/temp1.png`)} alt="" />
           <div className="Templates-details">
             <p>Try out this template</p>
           </div>
         </div>
+         </a>
+         <a href="https://sherocksatcollege.com/">
+
         <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={t2} alt="" />
+          <img src={require(`../image/temp2.png`)} alt="" />
           <div className="Templates-details">
             <p>Try out this template</p>
           </div>
         </div>
+         </a>
+
+         <a href="http://www.charliewaite.me/">
+
+
         <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={t3} alt="" />
+          <img src={require(`../image/temp3.png`)} alt="" />
           <div className="Templates-details">
             <p>Try out this template</p>
           </div>
         </div>
-        <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={t4} alt="" />
+         </a>
+         <a href="https://www.ajafrost.com/">
+         <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
+          <img src={require(`../image/temp4.png`)} alt="" />
           <div className="Templates-details">
             <p>Try out this template</p>
           </div>
         </div>
+         </a>
+        <a href="http://stefaniegrieser.com/">
+
+
         <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={t5} alt="" />
+          <img src={require(`../image/temp5.png`)} alt="" />
           <div className="Templates-details">
             <p>Try out this template</p>
           </div>
         </div>
+        </a>
+        <a href="https://adawaygroup.com/">
         <div className="Templates-image-container shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={t6} alt="" />
+          <img src={require(`../image/temp6.png`)} alt="" />
           <div className="Templates-details">
-            <p>Try out this template.</p>
+            <p>Try out this template</p>
           </div>
-        </div> 
+        </div>
+        </a>
+       
       </div>
     </>
   );

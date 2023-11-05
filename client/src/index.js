@@ -8,35 +8,45 @@ import Layout from './Layout';
 import SignUp from './Components/Singup_Singin/SignUp';
 import SignIn from './Components/Singup_Singin/SignIn';
 import Maincomponent from './Components/Home/Maincomponent';
+import { BrowserRouter } from 'react-router-dom'
+// import store from './store';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {
-        path: "",
-        element: <Maincomponent/>
-      },
-      {
-        path: "signup",
-        element: <SignUp/>
-      },
-      {
-        path : "login",
-        element :<SignIn/>
-      }
-    ]
-  }
-])
 
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <Layout />,
+//     children: [
+//       {
+//         path: "",
+//         element: <Maincomponent/>
+//       },
+//       {
+//         path: "signup",
+//         element: <SignUp/>
+//       },
+//       {
+//         path : "login",
+//         element :<SignIn/>
+//       }
+//     ]
+//   }
+// ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-    {/* <App/> */}
-  </React.StrictMode>
+  
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+   
 );
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//     {/* <App/> */}
+//   </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
