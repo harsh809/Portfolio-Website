@@ -1,7 +1,10 @@
 .first-container{
+    font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    background: #8fc4b7;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +19,7 @@
     padding: 15px 20px;
     border-radius: 5px;
     margin-bottom: 50px;
-    height:100vh;
+    height:85vh;
 }
 .container .title{
     text-align: center;
