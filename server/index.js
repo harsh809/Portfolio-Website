@@ -1,7 +1,7 @@
-// import express from "express";
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
+import express from "express";
+import cors from "cors";
+import mongoose from "mongoose";
+// const mongoose = require("mongoose");
 
 const app = express();
 app.use(express.json());
@@ -42,7 +42,7 @@ app.post("/Login", (req, res) => {
           res.send({ message: "wrong credentials" });
         }
       } else {
-        res.send("not registered");
+        res.send("Not registered");
       }
     })
     .catch((err) => {
@@ -51,7 +51,7 @@ app.post("/Login", (req, res) => {
     });
 });
 
-app.post("/register", (req, res) => {
+app.post("/Register", (req, res) => {
   console.log(req.body);
   const { username,fullname, email, password , cpassword , phonenumber , profession} = req.body;
   User.findOne({ email: email })

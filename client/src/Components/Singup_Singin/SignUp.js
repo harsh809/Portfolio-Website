@@ -17,9 +17,7 @@ export default function SignUp() {
     cpassword: ""
   });
 
-  const handleInputs = (e) => {
-    // const name = e.target.name;
-    // const value = e.target.value;
+  const handleChange = (e) => {
     const { name, value } = e.target
     setUser({ ...user, [name]: value });
   };
@@ -70,11 +68,12 @@ export default function SignUp() {
     }
     else {
      
-    navigator('/login')
-    axios.post('http://localhost:6969/register', user)
+    
+    axios.post('http://localhost:6969/Register', user)
       .then(result => console.log(result))
       .catch(err => console.log(err));
     }
+    navigator('/login')
   };
 
   return (
@@ -85,37 +84,37 @@ export default function SignUp() {
           <form >
             <div className="user-details">
               <div className="input-box">
-                <input type="text" name="fullname" value={user.fullname} onChange={handleInputs} required />
+                <input type="text" name="fullname" value={user.fullname} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Full name</label>
               </div>
               <div className="input-box">
-                <input type="text" name="username" value={user.username} onChange={handleInputs} required />
+                <input type="text" name="username" value={user.username} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Username</label>
               </div>
               <div className="input-box">
-                <input type="text" name="email" value={user.email} onChange={handleInputs} required />
+                <input type = "email" name="email" value={user.email} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Email</label>
               </div>
               <div className="input-box">
-                <input type="text" name="phonenumber" value={user.phonenumber} onChange={handleInputs} required />
+                <input type="text" name="phonenumber" value={user.phonenumber} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Phone Number</label>
               </div>
               <div className="input-box">
-                <input type="text" name="profession" value={user.profession} onChange={handleInputs} required />
+                <input type="text" name="profession" value={user.profession} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Profession</label>
               </div>
               <div className="input-box">
-                <input type="password" name="password" value={user.password} onChange={handleInputs} required />
+                <input type="password" name="password" value={user.password} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Password</label>
               </div>
               <div className="input-box mg-left">
-                <input type="password" name="cpassword" value={user.cpassword} onChange={handleInputs} required />
+                <input type="password" name="cpassword" value={user.cpassword} onChange={handleChange} required />
                 <span></span>
                 <label htmlFor="">Confirm Password</label>
               </div>

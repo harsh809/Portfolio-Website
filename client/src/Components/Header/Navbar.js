@@ -7,7 +7,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Link to="/" className="footer-column w-clearfix w-col w-col-4">
+          <Link to="/home" className="footer-column w-clearfix w-col w-col-4">
             <img
               src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/596d33f36607b12cfdaf8ad2_LogoWhite.png"
               alt=""
