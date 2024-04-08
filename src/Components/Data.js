@@ -1,16 +1,17 @@
 export const educationData = [
     {
-        heading: "Higher Secondary",
-        place: "Kendriya Vidyalaya",
-        date: "2020",
-        description: "Upon completing my 12th grade,Eager to pursue higher education.Alternatively, the idea of gaining practical skills through vocational training or internships is enticing. A gap year also holds appeal, allowing me to explore personal interests or gain valuable work experience before committing to a specific path. As I stand on the threshold of adulthood, the choices I make now will shape my future, contributing to both my professional journey and personal growth."
-    },
-    {
         heading: "BTech-Software Engg.",
         place: "Delhi Technological University",
         date: "2025",
         description: "During my graduation,I embarked on a journey of gaining practical experience through internships and projects. Subsequently, I delved into the realm of full-stack development, crafting feature-rich applications. These experiences have not only honed my technical skills in languages such as JavaScript, HTML, CSS, React, Nodejs, MongoDB, and Git but also cultivated a practical understanding of real-world applications in various domains."
+    },
+    {
+        heading: "Higher Secondary",
+        place: "Kendriya Vidyalaya",
+        date: "2020",
+        description: "Upon completing my 12th grade,Eager to pursue higher education.Alternatively, the idea of gaining practical skills through vocational training or internships is enticing. A gap year also holds appeal, allowing me to explore personal interests or gain valuable work experience before committing to a specific path. As I stand on the threshold of adulthood, the choices I make now will shape my future, contributing to both my professional journey and personal growth."
     }
+    
 ]
 export const AchivementsData = [
     {
