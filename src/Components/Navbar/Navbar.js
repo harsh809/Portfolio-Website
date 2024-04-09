@@ -4,7 +4,7 @@ function Navbar(props) {
     return (
         <>
             <header className="header">
-                <a href="#home" className="logo" onClick={props.menu}>Harsh</a>
+                <a href="#home" className="logo" onClick={props.menu}><img src="image/H logo.png" alt="" /></a>
 
                 <i className="fa-solid fa-bars" id="menu-icon"></i>
 
