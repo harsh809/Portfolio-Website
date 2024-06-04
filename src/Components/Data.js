@@ -30,18 +30,18 @@ export const AchivementsData = [
         description: "Achieved Global official Rank 71 out of 15.3K Participants in Codechef Starters 122 Division-4."
     },
     {
-        heading: "Codechef Starters 86",
+        heading: "Codechef Starters 136",
         link: "/",
-        description: "Achieved Global official Rank 616 out of 21.5K Participants in Codechef Starters 127 Division-4"
+        description: "Achieved Global official Rank 447 out of 14.5K Participants in Codechef Starters 137 Division-3"
     }
 ]
 export const ProjectData = [
     {
-       image: "image/gettowork.png",
-       sourecode: "https://github.com/harsh809/getToWork",
-       viewlink: "https://get-towork.vercel.app/",
-       name: "getToWork",
-       description: "A job portal to help recuriter and seekers"
+       image: "image/healthmate.png",
+       sourecode: "https://github.com/HarshSantoshi/Health-Mate",
+       codelink: "https://healthmate01.vercel.app",
+       name: "HealthMate",
+       description: "A job portal to fill the gap between Patient and Doctor"
     },
     {
        image: "image/weather.png",
